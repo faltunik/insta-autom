@@ -1,0 +1,20 @@
+1. Add all the pages link in the urls.text
+
+
+How to Run the Code
+
+METHOD 1:
+    1. Create virtual environment  (Link: https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
+    2. Activate the virtual environment
+    3. run this command : pip install -r requirements.txt 
+    4. run : python3 main.py 
+
+METHOD 2 (If you have Linux OS):
+    1. Run the run_script.sh  using ./run_script.sh (make sure cureent user has all the permission to directory etc)
+
+
+TIPS:
+1. We are using unofficial version of the Instagram Public Graphql API (to avoid getting banned, this library is purposefully slow)
+2. Instagram continually makes changes in BOT Detection algorithm, so sometimes, we may get error, we can try again letter
+3. Try to scrap through <25 urls in one go
+
