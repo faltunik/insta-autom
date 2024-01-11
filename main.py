@@ -123,6 +123,8 @@ def read_url_from_file(file_name):
 def main_executer(url_list, password, username, filename, amount, last_date=7, login_required=False):
     # create instabot object
     bot = Instabot(username, password, login_required=login_required)
+    with open(filename, "a+") as f:
+        f.write("Profile, Video Link, Views, Likes, Comments \n")
     for url in url_list:
         try:
             bot.scrape_url(url, filename, amount=amount, last_date=last_date)
