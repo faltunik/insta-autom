@@ -1,0 +1,8 @@
+*.pickle
+*.env
+*.json
+*.csv
+test.py
+plan.txt
+insta_scrap.json
+*.text
