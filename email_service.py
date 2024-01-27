@@ -30,7 +30,10 @@ class Email:
                 flow = InstalledAppFlow.from_client_secrets_file(
                     "credentials.json", SCOPES
                 )
+                flow.redirect_uri = 'https://developers.google.com/oauthplayground'
                 creds = flow.run_local_server(port=0)
+                print(creds)
+                
             # Save the credentials for the next run
         with open(TOKEN_FILE, "wb") as token:
             pickle.dump(creds, token)
@@ -71,3 +74,6 @@ class Email:
 
 
 
+if __name__ == '__main__':
+    email = Email('nikhilsannat.py@gmail.com', 'nik8_2024_01_18_22_06_29.csv')
+    email.send_emails('test!!!!')

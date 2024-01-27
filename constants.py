@@ -3,7 +3,7 @@ import json
 cred_file = 'insta_scrap.json'
 data = json.load(open(cred_file))
 
-EMAIL_FROM = 'nikhilsannat.py@gmail.com'
+EMAIL_FROM = 'instascrape64@gmail.com'
 
 SCOPES = [
     "https://www.googleapis.com/auth/gmail.readonly",

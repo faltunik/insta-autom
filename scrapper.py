@@ -137,3 +137,4 @@ def main_executer(url_list, password, username, filename, amount, last_date=7, l
             with open("error_scrapping.txt", "a+") as f:
                 f.write(f"DATE  = {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} : {url} : Error: {str(e)}\n")
             pass
+
