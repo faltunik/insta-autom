@@ -18,3 +18,8 @@ TIPS:
 2. Instagram continually makes changes in BOT Detection algorithm, so sometimes, we may get error, we can try again letter
 3. Try to scrap through <25 urls in one go
 
+
+How to Setup API
+1. Pip install requirements.txt
+2. pip install boto3 (it gives error if you install it before requirements.txt)
+3. start by running following command "uvicorn main:app"
